@@ -1,1 +1,45 @@
+/* css for p1 */
 
+
+
+/* css for p2 */
+
+.p2background {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.sidebar {
+    font-family: Helvetica, sans-serif;
+    height: 60%; /* Full-height: remove this if you want "auto" height */
+    width: 300px; /* Set the width of the sidebar */
+    position: absolute; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 230px; /* Stay at the top */
+    left: 80px;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+  }
+
+  .sidebar__tourdates {
+    font-family: Helvetica, sans-serif;
+    text-shadow: #d46ac7 5px 5px 10px;
+    font-size: 33px;
+    color: white;
+    font-size: 3.5vmin;
+  }
+
+  .sidebar__dates{
+      font-family: Helvetica, sans-serif;
+      font-size: 20px;
+      color: white;
+      font-size: 2.2vmin;
+  }
+
+  .tourdates:hover {
+    opacity: 0.8;
+    color: #9a7ec4;
+  }
