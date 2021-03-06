@@ -12,6 +12,25 @@
     overflow: hidden;
 }
 
+.p1title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 13vmin;
+    text-align: center;
+    text-shadow: white 5px 5px 10px;
+    background: -webkit-linear-gradient(35deg, #d46ac7, #9a7ec4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    padding-top: 70px;
+    animation-name: fade;
+    animation-duration: 4s;
+}
+
+@keyframes fade {
+    0% {
+      opacity: 0.0;}
+    }
+
 .sidebar {
     font-family: Helvetica, sans-serif;
     height: 60%; /* Full-height: remove this if you want "auto" height */
@@ -21,7 +40,7 @@
     top: 230px; /* Stay at the top */
     left: 80px;
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 20px;
+    margin-top: 20px;
   }
 
   .sidebar__tourdates {
@@ -39,7 +58,21 @@
       font-size: 2.2vmin;
   }
 
-  .tourdates:hover {
-    opacity: 0.8;
+  .sidebar__tourdates:hover {
+    opacity: 0.6;
     color: #9a7ec4;
+  }
+
+  .container {
+    font-family: Helvetica, sans-serif;
+    height: auto; /* Full-height: remove this if you want "auto" height */
+    width: auto; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    top: 240px; /* Stay at the top */
+    margin-left: 350px;
+    margin-right: 150px;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+    font-size: 2vmin;
+    margin-bottom: 30px;
   }
