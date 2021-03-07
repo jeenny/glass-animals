@@ -71,31 +71,30 @@
     font-family: Helvetica, sans-serif;
     height: auto; /* Full-height: remove this if you want "auto" height */
     width: auto; /* Set the width of the sidebar */
-    position: absolute; /* Fixed Sidebar (stay in place on scroll) */
-    top: 240px; /* Stay at the top */
+    position: relative; /* Fixed Sidebar (stay in place on scroll) */
+    top: 40px; /* Stay at the top */
     margin-left: 350px;
     margin-right: 150px;
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 20px;
+    padding-top: 10px;
     font-size: 2vmin;
     margin-bottom: 30px;
     color: black;
   }
 
   .container-md {
-    position: absolute;
-    top: 430px;
-    left: 450px;
-    height: auto; 
-    width: auto;
+    position: relative;
+    top: 50px;
+    margin-left: 350px;
   }
 
   .footer {
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
     color: white;
     text-align: center;
     font-family: Helvetica, sans-serif;
+    margin-top: 80px;
   }
