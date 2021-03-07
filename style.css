@@ -5,16 +5,18 @@
 /* css for p2 */
 
 .p2background {
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-    width: 100%;
-    overflow: hidden;
-}
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+      
+    /* Preserve aspet ratio */
+    min-width: 100%;
+    min-height: 100%;
+  }
 
 .p1title {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 13vmin;
+    font-family: 'Press Start 2P', Helvetica, sans-serif;
+    font-size: 12vmin;
     text-align: center;
     text-shadow: white 5px 5px 10px;
     background: -webkit-linear-gradient(35deg, #d46ac7, #9a7ec4);
@@ -22,6 +24,8 @@
     -webkit-text-fill-color: transparent;
     position: relative;
     padding-top: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
     animation-name: fade;
     animation-duration: 4s;
 }
@@ -35,7 +39,7 @@
     font-family: Helvetica, sans-serif;
     height: 60%; /* Full-height: remove this if you want "auto" height */
     width: 300px; /* Set the width of the sidebar */
-    position: absolute; /* Fixed Sidebar (stay in place on scroll) */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
     top: 230px; /* Stay at the top */
     left: 80px;
@@ -67,7 +71,7 @@
     font-family: Helvetica, sans-serif;
     height: auto; /* Full-height: remove this if you want "auto" height */
     width: auto; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    position: absolute; /* Fixed Sidebar (stay in place on scroll) */
     top: 240px; /* Stay at the top */
     margin-left: 350px;
     margin-right: 150px;
@@ -75,4 +79,23 @@
     padding-top: 20px;
     font-size: 2vmin;
     margin-bottom: 30px;
+    color: black;
+  }
+
+  .container-md {
+    position: absolute;
+    top: 430px;
+    left: 450px;
+    height: auto; 
+    width: auto;
+  }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
   }
