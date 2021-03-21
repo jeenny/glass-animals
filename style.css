@@ -44,12 +44,7 @@
 
 .p2background {
     position: fixed; 
-    top: 0; 
-    left: 0; 
-      
-    /* Preserve aspet ratio */
-    min-width: 100%;
-    min-height: 100%;
+    width: 100%;
   }
 
 .p1title {
@@ -76,8 +71,8 @@
 .sidebar {
     font-family: Helvetica, sans-serif;
     height: 60%; /* Full-height: remove this if you want "auto" height */
-    width: 300px; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    width: 200px; /* Set the width of the sidebar */
+    position: absolute; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
     top: 230px; /* Stay at the top */
     left: 80px;
@@ -91,6 +86,7 @@
     font-size: 33px;
     color: white;
     font-size: 3.5vmin;
+    text-decoration: none;
   }
 
   .sidebar__dates{
@@ -124,6 +120,7 @@
     position: relative;
     top: 50px;
     margin-left: 350px;
+    width: auto;
   }
 
   .footer {
